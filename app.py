@@ -19,13 +19,28 @@ def getMeaning(word):
         return f"\n'{word}' cannot be found "
 
 
-word_to_lookup = input('Enter the word: ')
 
 
-while word_to_lookup.lower() != "quit()":
-        print()
-        print(getMeaning(word_to_lookup))
-        print()
+while True:
+    
+        word_to_lookup = input('Enter the word: "\q" to quit program: ')
+        if word_to_lookup.lower() != "\q":
+            print()
+            print(getMeaning(word_to_lookup))
+            print()
+        else:
+            break
+   
+        
+        
+        
+# word_to_lookup = input('Enter the word: ')
+
+
+# while word_to_lookup.lower() != "quit()":
+#         print()
+#         print(getMeaning(word_to_lookup))
+#         print()
       
-        word_to_lookup = input('Enter the word: "quit()" to quit program: ')
+#         word_to_lookup = input('Enter the word: "quit()" to quit program: ')
         
